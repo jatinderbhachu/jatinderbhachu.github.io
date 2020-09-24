@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jatinder Bhachu">
+    <title>Jatinder Bhachu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script> 
+  </head>
+  <body>
+
+    <nav>
+      <a href="#home">Home</a>
+
+      <ul>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="home">
+      <div><a href="https://github.com/jatinderbhachu" target="_blank">GITHUB</a> | <a href="https://www.linkedin.com/in/jatinderbhachu/" target="_blank">LINKEDIN</a></div>
+      <h1>Hello, I'm <span>Jatinder Bhachu</span>, <br /> Web Developer.</h1>
+    </section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="projectEntry">
+        <h2 class="projectTitle">Exploding Kittens Clone</h2>
+
+        <div class="projectDetails">
+          A clone of the Exploding Kittens card game, built with ReactJS and NodeJS. <br><br>
+          Features: <br/>
+          <ul>
+            <li>Easily invite your friends with a single link!</li>
+            <li>Find someone to play with using the lobby browser!</li>
+            <li>Memes.</li>
+          </ul>
+        </div>
+
+        <h3>Demo</h3>
+        <div class="projectContainer">
+          <div class="projectPreview">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0Lqs1IXGqfI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <h3>Screenshots</h3>
+
+        <div class="ScreenshotContainer">
+          <div class="screenshots">
+            <div class="expKittensScreenshots">
+              <img src="public/expKittensS1.png" alt="Main Page">
+              <figcaption>Home Page</figcaption>
+            </div>
+            <div class="expKittensScreenshots">
+              <img src="public/expKittensS2.png" alt="Main Page">
+              <figcaption>Lobby Menu</figcaption>
+            </div>
+            <div class="expKittensScreenshots">
+              <img src="public/expKittensS3.png" alt="Main Page">
+              <figcaption>Lobby Browser</figcaption>
+            </div>
+            <div class="expKittensScreenshots">
+              <img src="public/expKittensS4.png" alt="Main Page">
+              <figcaption>In Game</figcaption>
+            </div>
+            <div class="expKittensScreenshots">
+              <img src="public/expKittensS5.png" alt="Main Page">
+              <figcaption>Game Over screen</figcaption>
+            </div>
+          </div>
+          <button onclick="expKittensSlide.previous()"> < </button>
+          <button onclick="expKittensSlide.next()"> > </button>
+        </div>
+      </div>
+
+      <div class="projectEntry">
+        <h2 class="projectTitle">OpenGL Graphing Calculator</h2>
+
+        <div class="projectDetails">
+          A graphing calculator inspired by <a href="https://www.desmos.com/calculator" target="_blank">desmos</a>.<br>
+          <ul>
+            <li>Multiple equation input</li>
+            <li>Drag and zoom</li>
+            <li>Fast rendering using SFML and C++</li>
+          </ul>
+        </div>
+
+        <h3>Screenshots</h3>
+
+        <div class="ScreenshotContainer">
+          <div class="screenshots">
+            <div class="graphingCalcScreenshots">
+              <img src="public/GraphingCalc.png" alt="Graphing Calculator Screenshot">
+            </div>
+          </div>
+          <button onclick="graphingCalcSlide.previous()"> < </button>
+          <button onclick="graphingCalcSlide.next()"> > </button>
+        </div>
+      </div>
+
+      <div class="projectEntry">
+        <h2 id="VectorFieldSim" class="projectTitle">OpenGL Vector Field Simulator</h2>
+
+        <div class="projectDetails">
+          A particle simulation made using C++/OpenGL. Uses compute shaders to simulate thousands of particles in realtime.
+        </div>
+
+        <h3>Screenshots</h3>
+
+        <div class="ScreenshotContainer">
+          <div class="screenshots">
+            <div class="particleSimScreenshots">
+              <img src="public/VectorFieldAnim.gif" alt="Main Page">
+              <figcaption>Spiral Vector Field GIF</figcaption>
+            </div>
+            <div class="particleSimScreenshots">
+              <img src="public/VectorField.png" alt="Main Page">
+              <figcaption>Spiral Vector Field</figcaption>
+            </div>
+          </div>
+          <button onclick="particleSimSlide.previous()"> < </button>
+          <button onclick="particleSimSlide.next()"> > </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h1>My Technical Skills</h1>
+      <p>Javascript | Java | C++ | Python | HTML | CSS</p>
+      <p>ReactJS | ExpressJS | NodeJS | Java Spring | OpenGL </p>
+    </section>
+    <section id="about">
+      <h1>About me</h1>
+      <p>I'm a passionate software developer who loves making web applications. During my spare time I like to work on hobby projects like my <a href="#VectorFieldSim">Vector Field Simulator</a>.</p>
+    </section>
+    <footer></footer>
+  </body>
+  <script src="main.js"></script>
+</html>
