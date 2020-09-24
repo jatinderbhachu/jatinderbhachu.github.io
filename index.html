@@ -28,15 +28,18 @@
     </nav>
     <section id="home">
       <div><a href="https://github.com/jatinderbhachu" target="_blank">GITHUB</a> | <a href="https://www.linkedin.com/in/jatinderbhachu/" target="_blank">LINKEDIN</a></div>
-      <h1>Hello, I'm <span>Jatinder Bhachu</span>, <br /> Web Developer.</h1>
+      <h1>Hello, I'm <span>Jatinder Bhachu</span>, <br /> Software Developer.</h1>
     </section>
     <section id="projects">
       <h1>Projects</h1>
       <div class="projectEntry">
-        <h2 class="projectTitle">Exploding Kittens Clone</h2>
+        <div class="projectTitle">
+          <h2>Exploding Kittens Clone</h2>
+          <p>JavaScript / ReactJS / NodeJS</p>
+        </div>
 
         <div class="projectDetails">
-          A clone of the Exploding Kittens card game, built with ReactJS and NodeJS. <br><br>
+          A clone of the <a href="https://explodingkittens.com/">Exploding Kittens</a> card game, built with ReactJS and NodeJS. <br><br>
           Features: <br/>
           <ul>
             <li>Easily invite your friends with a single link!</li>
@@ -83,14 +86,17 @@
       </div>
 
       <div class="projectEntry">
-        <h2 class="projectTitle">OpenGL Graphing Calculator</h2>
+        <div class="projectTitle">
+          <h2>OpenGL Graphing Calculator</h2>
+          <p>C++ / OpenGL</p>
+        </div>
 
         <div class="projectDetails">
-          A graphing calculator inspired by <a href="https://www.desmos.com/calculator" target="_blank">desmos</a>.<br>
+          A graphing calculator inspired by <a href="https://www.desmos.com/calculator" target="_blank">Desmos</a>.<br>
           <ul>
             <li>Multiple equation input</li>
             <li>Drag and zoom</li>
-            <li>Fast rendering using SFML and C++</li>
+            <li>Fast rendering using <a href="https://www.sfml-dev.org/">SFML</a> and C++</li>
           </ul>
         </div>
 
@@ -108,27 +114,31 @@
       </div>
 
       <div class="projectEntry">
-        <h2 id="VectorFieldSim" class="projectTitle">OpenGL Vector Field Simulator</h2>
+
+        <div id="VectorFieldVis" class="projectTitle">
+          <h2>Vector Field Visualizer (WIP)</h2>
+          <p>C++ / OpenGL</p>
+        </div>
 
         <div class="projectDetails">
-          A particle simulation made using C++/OpenGL. Uses compute shaders to simulate thousands of particles in realtime.
+          A 3D vector field visualizer using GPU particles.<br>Uses OpenGL compute shaders to simulate thousands of particles in real time.
         </div>
 
         <h3>Screenshots</h3>
 
         <div class="ScreenshotContainer">
           <div class="screenshots">
-            <div class="particleSimScreenshots">
+            <div class="vecFieldVisScreenshots">
               <img src="public/VectorFieldAnim.gif" alt="Main Page">
               <figcaption>Spiral Vector Field GIF</figcaption>
             </div>
-            <div class="particleSimScreenshots">
+            <div class="vecFieldVisScreenshots">
               <img src="public/VectorField.png" alt="Main Page">
               <figcaption>Spiral Vector Field</figcaption>
             </div>
           </div>
-          <button onclick="particleSimSlide.previous()"> < </button>
-          <button onclick="particleSimSlide.next()"> > </button>
+          <button onclick="vecFieldVisSlide.previous()"> < </button>
+          <button onclick="vecFieldVisSlide.next()"> > </button>
         </div>
       </div>
     </section>
@@ -140,7 +150,7 @@
     </section>
     <section id="about">
       <h1>About me</h1>
-      <p>I'm a passionate software developer who loves making web applications. During my spare time I like to work on hobby projects like my <a href="#VectorFieldSim">Vector Field Simulator</a>.</p>
+      <p>I'm a passionate software developer who loves making web applications. During my spare time I like to work on hobby projects like my <a href="#VectorFieldVis">Vector Field Visualizer</a>.</p>
     </section>
     <footer></footer>
   </body>

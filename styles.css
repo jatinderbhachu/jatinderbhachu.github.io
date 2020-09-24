@@ -67,6 +67,7 @@ section {
 
 a { color: white; }
 a:visited { color: white; }
+a:hover { color: #f1f1e6; }
 
 #home {
   color: white;
@@ -150,14 +151,24 @@ a:visited { color: white; }
 }
 
 .projectTitle {
-  font-size: 4rem;
+  /*font-size: 4rem;*/
   padding: 4vh;
-  color: #FF3F3F; 
   background-color: #f1f1e6;
   margin-bottom: 2vh;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+
+.projectTitle h2 {
+  color: #FF3F3F; 
+  font-size: 4rem;
+}
+
+.projectTitle p {
+  font-size: 2rem;
+  color: #313131;
+}
+
 
 .projectContainer {
   width: 50vw;
