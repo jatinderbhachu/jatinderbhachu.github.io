@@ -87,6 +87,16 @@ a:hover { color: #f1f1e6; }
   animation: nameReveal 2s ease-out;
 }
 
+#home > a:last-of-type {
+  position: absolute;
+  width: 100%;
+  bottom: 2vh;
+  text-decoration: none;
+  font-size: 5rem;
+  /*margin-bottom: 1vh;*/
+  /*margin-top: auto;*/
+}
+
 
 @keyframes nameReveal { 
     0%{
@@ -111,10 +121,11 @@ a:hover { color: #f1f1e6; }
 
 
 #home {
-  /*background-image: url("./particleBackground.png");*/
-  /*background-image: url("./particleBackground2.png");*/
-  /*background-image: url("./particleBackground3.png");*/
+  /*background-image: url("./public/particleBackground.png");*/
+  /*background-image: url("./public/particleBackground2.png");*/
+  /*background-image: url("./public/particleBackground3.png");*/
   background-image: url("./public/particleBackground4.png");
+  background-size: cover;
 }
 
 #projects {
@@ -128,6 +139,7 @@ a:hover { color: #f1f1e6; }
 
 #projects ul{
   display: inline-block;
+  max-width: 80%;
 }
 
 
