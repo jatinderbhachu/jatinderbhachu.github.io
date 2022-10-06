@@ -1,172 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jatinder Bhachu">
-    <title>Jatinder Bhachu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./styles.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script> 
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jatinder Bhachu">
+        <title>Jatinder Bhachu</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script> 
+    </head>
+    <body>
+        <nav>
+            <a href="#home">Home</a>
+            <ul>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="./projects/FPSGame.html">Untitled FPS game</a>
+                </li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div><a href="https://github.com/jatinderbhachu" target="_blank">GITHUB</a> | <a href="https://www.linkedin.com/in/jatinderbhachu/" target="_blank">LINKEDIN</a></div>
+            <h1>Hello, I'm <span>Jatinder Bhachu</span>, <br /> Software Developer.</h1>
+            <a href="#projects">&#x25BC</a>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="projectEntry">
+                <div id="FileBrowser" class="projectTitle">
+                    <h2>File Browser (WIP)</h2>
+                    <p><a href="https://github.com/jatinderbhachu/filebrowser" target="_blank">GitHub</a></p>
+                    <p>C++ / OpenGL</p>
+                </div>
 
-    <nav>
-      <a href="#home">Home</a>
+                <div class="projectDetails">
+                    An experimental file browser with a focus on productivity and speed. Written in C++17. 
+                    <br/><br/>
+                    Features:
+                    <br/>
+                    <ul>
+                        <li>Tabbed browsing</li>
+                        <li>A command palette to run commands like 'replace' and 'mkdir'</li>
+                        <li>A fast search command with '/'</li>
+                    </ul>
+                </div>
 
-      <ul>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#about">About Me</a>
-        </li>
-      </ul>
-    </nav>
-    <section id="home">
-      <div><a href="https://github.com/jatinderbhachu" target="_blank">GITHUB</a> | <a href="https://www.linkedin.com/in/jatinderbhachu/" target="_blank">LINKEDIN</a></div>
-      <h1>Hello, I'm <span>Jatinder Bhachu</span>, <br /> Software Developer.</h1>
-      <a href="#projects">&#x25BC</a>
-    </section>
-    <section id="projects">
-      <h1>Projects</h1>
-      <div class="projectEntry">
-        <div class="projectTitle">
-          <h2>Exploding Kittens Clone</h2>
-          <p>ReactJS / NodeJS / WebSocket API</p>
-        </div>
+                <h3>Showcase</h3>
 
-        <div class="projectDetails">
-          A clone of the <a href="https://explodingkittens.com/">Exploding Kittens</a> card game, built with ReactJS and NodeJS. <br><br>
-          Features: <br/>
-          <ul>
-            <li>Easily invite your friends with a single link!</li>
-            <li>Find someone to play with using the lobby browser!</li>
-            <li>Memes.</li>
-          </ul>
-        </div>
-
-        <h3>Demo</h3>
-        <div class="projectContainer">
-          <div class="projectPreview">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/0Lqs1IXGqfI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <h3>Screenshots</h3>
-
-        <div class="ScreenshotContainer">
-          <div class="screenshots">
-            <div class="expKittensScreenshots">
-              <img src="public/expKittensS1.png" alt="Main Page">
-              <figcaption>Home Page</figcaption>
+                <div class="ScreenshotContainer">
+                    <div class="screenshots">
+                        <div class="filebrowserScreenshots">
+                            <video src="https://user-images.githubusercontent.com/10367799/193976266-77211bfe-a5d6-45c3-86d9-3960ff32b0a2.mp4" data-canonical-src="https://user-images.githubusercontent.com/10367799/193976266-77211bfe-a5d6-45c3-86d9-3960ff32b0a2.mp4" controls="controls" muted="muted" style="max-height:640px;"></video>
+                            <figcaption>Tabs and docking</figcaption>
+                        </div>
+                        <div class="filebrowserScreenshots">
+                            <video src="https://user-images.githubusercontent.com/10367799/193976268-2c06ae92-e412-4f21-8a00-de631497d1ac.mp4" data-canonical-src="https://user-images.githubusercontent.com/10367799/193976268-2c06ae92-e412-4f21-8a00-de631497d1ac.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px;"></video>
+                            <figcaption>Replace in selection using the command palette</figcaption>
+                        </div>
+                        <div class="filebrowserScreenshots">
+                            <video src="https://user-images.githubusercontent.com/10367799/193976269-d8811a57-e39a-4846-a010-b702746ed266.mp4" data-canonical-src="https://user-images.githubusercontent.com/10367799/193976269-d8811a57-e39a-4846-a010-b702746ed266.mp4" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px;"></video>
+                            <figcaption>Fast search using '/' command</figcaption>
+                        </div>
+                    </div>
+                    <button onclick="filebrowserSlide.previous()"> &#60; </button>
+                    <button onclick="filebrowserSlide.next()"> &#62; </button>
+                </div>
             </div>
-            <div class="expKittensScreenshots">
-              <img src="public/expKittensS2.png" alt="Main Page">
-              <figcaption>Lobby Menu</figcaption>
-            </div>
-            <div class="expKittensScreenshots">
-              <img src="public/expKittensS3.png" alt="Main Page">
-              <figcaption>Lobby Browser</figcaption>
-            </div>
-            <div class="expKittensScreenshots">
-              <img src="public/expKittensS4.png" alt="Main Page">
-              <figcaption>In Game</figcaption>
-            </div>
-            <div class="expKittensScreenshots">
-              <img src="public/expKittensS5.png" alt="Main Page">
-              <figcaption>Game Over screen</figcaption>
-            </div>
-          </div>
-          <button onclick="expKittensSlide.previous()"> &#60; </button>
-          <button onclick="expKittensSlide.next()"> &#62; </button>
-        </div>
-      </div>
+            <div class="projectEntry">
+                <div id="VectorFieldVis" class="projectTitle">
+                    <h2>Vector Field Visualizer (WIP)</h2>
+                    <p><a href="https://github.com/jatinderbhachu/Vector-Field-Visualizer" target="_blank">GitHub</a></p>
+                    <p>C++ / OpenGL</p>
+                </div>
 
-      <div class="projectEntry">
-        <div id="VectorFieldVis" class="projectTitle">
-          <h2>Vector Field Visualizer (WIP)</h2>
-          <p><a href="https://github.com/jatinderbhachu/Vector-Field-Visualizer" target="_blank">GitHub</a></p>
-          <p>C++ / OpenGL</p>
-        </div>
+                <div class="projectDetails">
+                    A 3D vector field visualizer using GPU particles.<br>Uses OpenGL compute shaders to simulate thousands of particles in real time.
+                </div>
 
-        <div class="projectDetails">
-          A 3D vector field visualizer using GPU particles.<br>Uses OpenGL compute shaders to simulate thousands of particles in real time.
-        </div>
+                <h3>Screenshots</h3>
 
-        <h3>Screenshots</h3>
-
-        <div class="ScreenshotContainer">
-          <div class="screenshots">
-            <div class="vecFieldVisScreenshots">
-              <img src="https://raw.githubusercontent.com/jatinderbhachu/Vector-Field-Visualizer/master/screenshots/spiral.png" alt="">
-              <figcaption></figcaption>
+                <div class="ScreenshotContainer">
+                    <div class="screenshots">
+                        <div class="vecFieldVisScreenshots">
+                            <img src="https://raw.githubusercontent.com/jatinderbhachu/Vector-Field-Visualizer/master/screenshots/spiral.png" alt="">
+                            <figcaption></figcaption>
+                        </div>
+                        <div class="vecFieldVisScreenshots">
+                            <img src="https://raw.githubusercontent.com/jatinderbhachu/Vector-Field-Visualizer/master/screenshots/cube.png" alt="">
+                            <figcaption></figcaption>
+                        </div>
+                        <div class="vecFieldVisScreenshots">
+                            <img src="https://raw.githubusercontent.com/jatinderbhachu/Vector-Field-Visualizer/master/screenshots/spiral2.png" alt="">
+                            <figcaption></figcaption>
+                        </div>
+                        <div class="vecFieldVisScreenshots">
+                            <img src="public/vectorFieldAnim1.gif" alt="Vector field gif 1">
+                            <figcaption>Spiral Vector Field GIF</figcaption>
+                        </div>
+                    </div>
+                    <button onclick="vecFieldVisSlide.previous()"> &#60; </button>
+                    <button onclick="vecFieldVisSlide.next()"> &#62; </button>
+                </div>
             </div>
-            <div class="vecFieldVisScreenshots">
-              <img src="https://raw.githubusercontent.com/jatinderbhachu/Vector-Field-Visualizer/master/screenshots/cube.png" alt="">
-              <figcaption></figcaption>
+            <div class="projectEntry">
+                <div class="projectTitle">
+                    <h2>Exploding Kittens Clone</h2>
+                    <p>ReactJS / NodeJS / WebSocket API</p>
+                </div>
+
+                <div class="projectDetails">
+                    A clone of the <a href="https://explodingkittens.com/">Exploding Kittens</a> card game, built with ReactJS and NodeJS. <br><br>
+                    Features: <br/>
+                    <ul>
+                        <li>Easily invite your friends with a single link!</li>
+                        <li>Find someone to play with using the lobby browser!</li>
+                        <li>Memes.</li>
+                    </ul>
+                </div>
+
+                <h3>Demo</h3>
+                <div class="projectContainer">
+                    <div class="projectPreview">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0Lqs1IXGqfI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <h3>Screenshots</h3>
+
+                <div class="ScreenshotContainer">
+                    <div class="screenshots">
+                        <div class="expKittensScreenshots">
+                            <img src="public/expKittensS1.png" alt="Main Page">
+                            <figcaption>Home Page</figcaption>
+                        </div>
+                        <div class="expKittensScreenshots">
+                            <img src="public/expKittensS2.png" alt="Main Page">
+                            <figcaption>Lobby Menu</figcaption>
+                        </div>
+                        <div class="expKittensScreenshots">
+                            <img src="public/expKittensS3.png" alt="Main Page">
+                            <figcaption>Lobby Browser</figcaption>
+                        </div>
+                        <div class="expKittensScreenshots">
+                            <img src="public/expKittensS4.png" alt="Main Page">
+                            <figcaption>In Game</figcaption>
+                        </div>
+                        <div class="expKittensScreenshots">
+                            <img src="public/expKittensS5.png" alt="Main Page">
+                            <figcaption>Game Over screen</figcaption>
+                        </div>
+                    </div>
+                    <button onclick="expKittensSlide.previous()"> &#60; </button>
+                    <button onclick="expKittensSlide.next()"> &#62; </button>
+                </div>
             </div>
-            <div class="vecFieldVisScreenshots">
-              <img src="https://raw.githubusercontent.com/jatinderbhachu/Vector-Field-Visualizer/master/screenshots/spiral2.png" alt="">
-              <figcaption></figcaption>
+            <div class="projectEntry">
+                <div class="projectTitle">
+                    <h2>OpenGL Graphing Calculator</h2>
+                    <p><a href="https://github.com/jatinderbhachu/Graphing-Calculator" target="_blank">GitHub</a></p>
+                    <p>C++ / OpenGL</p>
+                </div>
+
+                <div class="projectDetails">
+                    A graphing calculator inspired by <a href="https://www.desmos.com/calculator" target="_blank">Desmos</a>.<br>
+                    <ul>
+                        <li>Multiple equation input</li>
+                        <li>Drag and zoom</li>
+                        <li>Fast rendering using <a href="https://www.sfml-dev.org/" target="_blank">SFML</a> and C++</li>
+                    </ul>
+                </div>
+
+                <h3>Screenshots</h3>
+
+                <div class="ScreenshotContainer">
+                    <div class="screenshots">
+                        <div class="graphingCalcScreenshots">
+                            <img src="public/graphingCalcDemo.gif" alt="Graphing Calculator GIF">
+                        </div>
+                        <div class="graphingCalcScreenshots">
+                            <img src="public/GraphingCalc.png" alt="Graphing Calculator Screenshot">
+                        </div>
+                    </div>
+                    <button onclick="graphingCalcSlide.previous()"> &#60; </button>
+                    <button onclick="graphingCalcSlide.next()"> &#62; </button>
+                </div>
             </div>
-            <div class="vecFieldVisScreenshots">
-              <img src="public/vectorFieldAnim1.gif" alt="Vector field gif 1">
-              <figcaption>Spiral Vector Field GIF</figcaption>
-            </div>
-          </div>
-          <button onclick="vecFieldVisSlide.previous()"> &#60; </button>
-          <button onclick="vecFieldVisSlide.next()"> &#62; </button>
-        </div>
-      </div>
+        </section>
 
-      <div class="projectEntry">
-        <div class="projectTitle">
-          <h2>OpenGL Graphing Calculator</h2>
-          <p><a href="https://github.com/jatinderbhachu/Graphing-Calculator" target="_blank">GitHub</a></p>
-          <p>C++ / OpenGL</p>
-        </div>
-
-        <div class="projectDetails">
-          A graphing calculator inspired by <a href="https://www.desmos.com/calculator" target="_blank">Desmos</a>.<br>
-          <ul>
-            <li>Multiple equation input</li>
-            <li>Drag and zoom</li>
-            <li>Fast rendering using <a href="https://www.sfml-dev.org/" target="_blank">SFML</a> and C++</li>
-          </ul>
-        </div>
-
-        <h3>Screenshots</h3>
-
-        <div class="ScreenshotContainer">
-          <div class="screenshots">
-            <div class="graphingCalcScreenshots">
-              <img src="public/graphingCalcDemo.gif" alt="Graphing Calculator GIF">
-            </div>
-            <div class="graphingCalcScreenshots">
-              <img src="public/GraphingCalc.png" alt="Graphing Calculator Screenshot">
-            </div>
-          </div>
-          <button onclick="graphingCalcSlide.previous()"> &#60; </button>
-          <button onclick="graphingCalcSlide.next()"> &#62; </button>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="skills">
-      <h1>My Technical Skills</h1>
-      <p>Javascript | Java | C++ | Python | HTML | CSS</p>
-      <p>ReactJS | ExpressJS | NodeJS | Java Spring | OpenGL </p>
-    </section>
-    <section id="about">
-      <h1>About me</h1>
-      <p>I'm a passionate software developer who loves making web applications. During my spare time I like to work on hobby projects like my <a href="#VectorFieldVis">Vector Field Visualizer</a>.</p>
-    </section>
-    <footer></footer>
-  </body>
-  <script src="main.js"></script>
+        <section id="skills">
+            <h1>My Technical Skills</h1>
+            <p> C++ | Python | Java | Javascript | HTML | CSS</p>
+            <p> ReactJS | AngularJS | Spring Boot | OpenGL </p>
+        </section>
+        <section id="about">
+            <h1>About me</h1>
+            <p>I'm a passionate software developer that specializes in C++. I enjoy making interactive applications and learning about new technologies by experimenting with different ideas.</a>.</p>
+        </section>
+        <footer></footer>
+    </body>
+    <script src="main.js"></script>
 </html>

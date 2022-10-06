@@ -8,6 +8,7 @@ const projectsSection = document.querySelector("#projects");
     //navBar.classList.remove("navBackground");
   //}
 //}
+const filebrowserSlide = w3.slideshow('.filebrowserScreenshots', 0);
 const expKittensSlide = w3.slideshow('.expKittensScreenshots', 0);
 const graphingCalcSlide = w3.slideshow('.graphingCalcScreenshots', 0);
 const vecFieldVisSlide = w3.slideshow('.vecFieldVisScreenshots', 0);
